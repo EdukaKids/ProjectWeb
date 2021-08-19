@@ -1,0 +1,7 @@
+C:\Users\LAB-A18\Documents\Ciência da Computação\TCC\EdukaKids\EdukaKids\EdukaKids\bin\Debug\netstandard2.1\EdukaKids.deps.json
+C:\Users\LAB-A18\Documents\Ciência da Computação\TCC\EdukaKids\EdukaKids\EdukaKids\bin\Debug\netstandard2.1\EdukaKids.dll
+C:\Users\LAB-A18\Documents\Ciência da Computação\TCC\EdukaKids\EdukaKids\EdukaKids\bin\Debug\netstandard2.1\EdukaKids.pdb
+C:\Users\LAB-A18\Documents\Ciência da Computação\TCC\EdukaKids\EdukaKids\EdukaKids\obj\Debug\netstandard2.1\EdukaKids.msbuildprojAssemblyReference.cache
+C:\Users\LAB-A18\Documents\Ciência da Computação\TCC\EdukaKids\EdukaKids\EdukaKids\obj\Debug\netstandard2.1\EdukaKids.msbuildproj.CoreCompileInputs.cache
+C:\Users\LAB-A18\Documents\Ciência da Computação\TCC\EdukaKids\EdukaKids\EdukaKids\obj\Debug\netstandard2.1\EdukaKids.dll
+C:\Users\LAB-A18\Documents\Ciência da Computação\TCC\EdukaKids\EdukaKids\EdukaKids\obj\Debug\netstandard2.1\EdukaKids.pdb

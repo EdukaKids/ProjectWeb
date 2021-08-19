@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+.banner{
+	height: 100px;
+	margin-top: 50px;
+	background-color: #52A3FB;
+}
+
+.titulo{
+	margin-top: 30px;
+	color: #FFF;
+}
+     
