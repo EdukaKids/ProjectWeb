@@ -1,0 +1,21 @@
+{
+  "name": "test-project",
+  "version": "1.0.0",
+  "description": "A Vue.js project",
+  "main": "src/main.js",
+  "private": true,
+  "scripts": {
+    "dev": "build/webpack.dev.conf.js",
+    "start": "npm run dev",
+    "unit": "jest --config test/unit/jest.conf.js --coverage",
+    "test": "npm run unit",
+    "lint": "eslint --ext .js,.vue src test/unit",
+    "build": "node build/build.js"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "bootstrap-vue": "^2.21.2",
+    "bulma": "^0.9.3",
+    "vue": "^2.6.14"
+  }
+}

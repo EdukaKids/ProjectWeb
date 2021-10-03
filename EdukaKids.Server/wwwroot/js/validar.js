@@ -10,7 +10,7 @@ function validar(){
 		alert("Todos os campos são obrigatórios");
 		return false;
 	}
-	else if(nome.length>30){
+	else if(nome.length>60){
 		alert("O nome é muito grande");
 		return false;
 	}
@@ -30,4 +30,16 @@ function validar(){
 	alert("A mensagem é muito grande");
 	return false;
 	}
+	$.ajax({
+		type: "GET",
+		url: "https://localhost:5001/api/Values",
+		success: (res) => {
+			alert(res);
+		},
+		error: (err) => {
+			console.log(err);
+		}
+	});
+	alert("enviado");
+	return true;
 }

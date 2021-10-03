@@ -84,7 +84,7 @@ text-decoration: none;
 </main> 
 <div class="contenedor2">
 		<div class="contenedor_tarjeta">
-			<a href="quiz/quiz.html">
+			<a href="./quiz/quiz.php">
 				<figure id="tarjeta">
 					<img src="images/quiz.png" class="frontal" alt="quiz" title="Eduka Kids">
 					<figcaption class="trasera">
@@ -97,7 +97,7 @@ text-decoration: none;
 		</div>
     <div class="contenedor3">
     <div class="contenedor_tarjeta">
-      <a href="">
+      <a href="https://simmer.io/@EdukaKids/jogo-da-memoria">
         <figure id="tarjeta">
           <img src="images/jogos.png" class="frontal" alt="jogos" title="Eduka Kids">
           <figcaption class="trasera">

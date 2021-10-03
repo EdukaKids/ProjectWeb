@@ -1,20 +1,24 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using EdukaKids.Server.Data.DBContext;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using System;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace EdukaKids.Server
 {
     public class Startup
     {
+        private readonly IConfiguration configuration;
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
 
-            //services.AddDbContext<TodoContext>(opt =>
-            //                                   opt.UseInMemoryDatabase("TodoList"));
+            services.AddDbContext<Context>(opt =>
+                     opt.UseSqlServer(configuration.GetConnectionString("EdukaKids")));
             
             services.AddSwaggerGen(c =>
             {
