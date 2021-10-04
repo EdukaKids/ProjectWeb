@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using EdukaKids.Server.Data.interfaces;
+﻿using EdukaKids.Server.Data.interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EdukaKids.Server.Controllers
 {

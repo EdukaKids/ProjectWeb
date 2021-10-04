@@ -7,9 +7,9 @@ using Microsoft.OpenApi.Models;
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using EdukaKids.Server.Data.interfaces;
 using EdukaKids.Server.Data.Repositories;
 using System.IO;
+using EdukaKids.Server.Data.interfaces;
 
 namespace EdukaKids.Server
 {

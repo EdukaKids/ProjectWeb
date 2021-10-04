@@ -1,8 +1,8 @@
-using EdukaKids.Server.ViewModel;
-using EdukaKids.Server.Data.interfaces;
 using EdukaKids.Server.Data.DBContext;
+using EdukaKids.Server.Data.interfaces;
 
-namespace EdukaKids.Server.Data.Repositories{
+namespace EdukaKids.Server.Data.Repositories
+{
 
     public class LoginRepository : ILoginRepository {
 
