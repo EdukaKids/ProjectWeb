@@ -1,7 +1,5 @@
 {
-  "ConnectionStrings": {
-    "EdukaKids": "Server=DESKTOP-R1I2IC0;Database=EdukaKids;Trusted_Connection=True;MultipleActiveResultSets=true"
-  },
+  
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,

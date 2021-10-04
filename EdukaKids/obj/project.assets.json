@@ -7476,19 +7476,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LAB-A18\\.nuget\\packages\\": {}
+    "C:\\Users\\mauri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj",
+      "projectUniqueName": "C:\\Users\\mauri\\OneDrive\\Documentos\\Dev\\ProjectWeb\\EdukaKids\\EdukaKids.msbuildproj",
       "projectName": "EdukaKids",
-      "projectPath": "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj",
-      "packagesPath": "C:\\Users\\LAB-A18\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\obj\\",
+      "projectPath": "C:\\Users\\mauri\\OneDrive\\Documentos\\Dev\\ProjectWeb\\EdukaKids\\EdukaKids.msbuildproj",
+      "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mauri\\OneDrive\\Documentos\\Dev\\ProjectWeb\\EdukaKids\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\LAB-A18\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7529,7 +7529,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

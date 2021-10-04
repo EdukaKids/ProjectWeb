@@ -7,23 +7,35 @@ using Microsoft.OpenApi.Models;
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using EdukaKids.Server.Data.interfaces;
+using EdukaKids.Server.Data.Repositories;
+using System.IO;
 
 namespace EdukaKids.Server
 {
     public class Startup
     {
-        private readonly IConfiguration configuration;
+        private IConfiguration Configuration;
+        public Startup()
+        {
+            Configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .Build();
+        }
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
 
             services.AddDbContext<Context>(opt =>
-                     opt.UseSqlServer(configuration.GetConnectionString("EdukaKids")));
+                     opt.UseSqlServer(Configuration.GetConnectionString("EdukaKids")));
             
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TodoApi", Version = "v1" });
             });
+
+            services.AddScoped<ILoginRepository, LoginRepository>();
 
             // Adds a default in-memory implementation of IDistributedCache.
             services.AddDistributedMemoryCache();
