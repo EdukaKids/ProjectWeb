@@ -265,3 +265,4 @@ C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\obj\Debug\net
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\obj\Debug\net5.0\EdukaKids.Server.pdb
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\obj\Debug\net5.0\EdukaKids.Server.genruntimeconfig.cache
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Debug\net5.0\appsettings.json
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

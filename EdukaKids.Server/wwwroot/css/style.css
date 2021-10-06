@@ -2,8 +2,8 @@
 /* CSS Document */
 
 @import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
-@import url(menu.css);
-@import url(banners.css);
+@import url(css/menu.css);
+@import url(css/banner.css);
 
 * {
 	margin: 0;
