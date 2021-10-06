@@ -1,5 +1,6 @@
 <?php
-$msg = "<i>Hello</i>"
+$nome = $_POST['nome'];
+$senha = $_POST['senha'];
 ?>
 
 <!DOCTYPE html>
@@ -36,18 +37,18 @@ $msg = "<i>Hello</i>"
     </div>
 
     <!-- Formulario de login -->
-    <form class="container mt-4">
+    <form method="get" action="/api/Login" class="container mt-4">
         <div class="row d-flex justify-content-center">
             <div class="mb-3 col-5">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="nome" name="nome" aria-describedby="emailHelp">
             </div>
         </div>
 
         <div class="row d-flex justify-content-center">
             <div class="mb-3 col-5">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <input type="password" class="form-control" id="senha" name="senha">
             </div>
         </div>
         <div class="d-flex justify-content-center">

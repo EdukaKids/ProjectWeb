@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EdukaKids.Server.Controllers
 {
-    [Table("Login")]
+    [Table("login")]
     public class Login {
         [Column("id")]
         public Guid id { get; set; }
@@ -13,10 +13,10 @@ namespace EdukaKids.Server.Controllers
         public string nome { get; set; }
         [Column("senha")]
         public string senha { get; set; }
-        [Column("Token")]
+        /*[Column("Token")]
         public string token { get; set; }
         [Column("Expired")]
-        public DateTime expired { get; set; }
+        public DateTime expired { get; set; }*/
         
     }
 }
