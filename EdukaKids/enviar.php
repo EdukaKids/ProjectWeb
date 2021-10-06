@@ -12,7 +12,7 @@ $data = date('Y-m-d H:i:s');
 //consulta para inserir
 $insertar = "INSERT INTO contato(Nome, Email, Telefone, Mensagem, Data) VALUES ('$nome','$email','$telefone','$mensagem','$data')";
 
-/*$verificar_usuario= mysqli_query($conexion, "SELECT * FROM contato WHERE Email = '$email'");
+$verificar_usuario= mysqli_query($conexion, "SELECT * FROM contato WHERE Email = '$email'");
 if(mysqli_num_rows($verificar_usuario) > 0){
 	$_SESSION['msg'] = "<h3 style='color:red;'>Você já enviou um e-mail.<h3>";
 	header("Location: contato.php");
@@ -63,5 +63,5 @@ $resultado= mysqli_query($conexion, $insertar);
 }
 
 //encerrar sessao
-mysqli_close($conexion);*/
+mysqli_close($conexion);
 ?>

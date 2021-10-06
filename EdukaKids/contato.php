@@ -102,11 +102,11 @@ text-decoration: none;
    </header>
    
    <section>   
-        <div class="banner">
-            <div class="contenedor">
-                <h1 class="titulo">Fale Conosco</h1>
-            </div>
-        </div>
+   <div class="banner">
+       <div class="contenedor">
+   <h1 class="titulo">Fale Conosco</h1>
+   </div>
+   </div>
    </section>
    <section>
    <div class="contenedor">
@@ -123,7 +123,7 @@ text-decoration: none;
 		?>
 		</center></div>
    
-<form method="post" class="formulario" onsubmit="return validar();">
+<form action="enviar.php" method="post" class="formulario" onsubmit="return validar();">
     <br>
     <input type="text" name="nome" id="nome" class="formulario_input">
     <label for="" class="formulario_label">Nome Completo</label>

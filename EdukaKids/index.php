@@ -102,14 +102,14 @@ text-decoration: none;
 	</div>
    </section>
 		<footer class="rodape">
-			<div class="container"><center>
-				<div class="rede" id="facebook"> <a href="" class="icon-facebook-squared sociais"></a> </div>
-        		<div class="rede" id="instagram"> <a href="" class="icon-instagram sociais"></a> </div><br><br>
-				<a href="info.php" class="cond">Termos e Condições</a>|
-				<a href="mapa.php" class="cond">Mapa do Site </a><br><br>
-				<span>© Copyright 2021, Eduka Kids - Todos os direitos reservados.</span>
-			</center>
-			</div>
+		<div class="container"><center>
+		<div class="rede" id="facebook"> <a href="" class="icon-facebook-squared sociais"></a> </div>
+        <div class="rede" id="instagram"> <a href="" class="icon-instagram sociais"></a> </div><br><br>
+		<a href="info.php" class="cond">Termos e Condições</a>|
+		<a href="mapa.php" class="cond">Mapa do Site </a><br><br>
+		<span>© Copyright 2021, Eduka Kids - Todos os direitos reservados.</span>
+		</center>
+		</div>
 		</footer>
         <!--Botão voltar para cima-->
         <div class="btn-voltar jbtn-voltar">

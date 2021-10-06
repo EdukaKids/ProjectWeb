@@ -74,7 +74,7 @@ text-decoration: none;
    <main>
     <div class="banner">
         <div class="contenedor">
-            <h1 class="titulo">Atividades</h1> </div>
+            <h1 class="titulo">Jogos</h1> </div>
     </div>
         <div class="contenedor">
             <center><h1>APRENDA BRINCANDO!!</h1></center>
@@ -84,26 +84,26 @@ text-decoration: none;
 </main> 
 <div class="contenedor2">
 		<div class="contenedor_tarjeta">
-			<a href="quiz/quiz.html">
+			<a href="https://simmer.io/@EdukaKids/jogo-da-memoria">
 				<figure id="tarjeta">
-					<img src="images/quiz.png" class="frontal" alt="quiz" title="Eduka Kids">
+					<img src="images/jogo_memoria.png" class="frontal" alt="jogo_memoria" title="Eduka Kids">
 					<figcaption class="trasera">
-						<h2 class="titulo">Quiz</h2>
+						<h2 class="titulo">Jogo da Memória</h2>
 						<hr>
-						<p>Matemática, Português e Inglês</p>
+						<p>Jogo com 10 fases.</p>
 					</figcaption>
 				</figure>
 			</a>
 		</div>
     <div class="contenedor3">
     <div class="contenedor_tarjeta">
-      <a href="jogos.php">
+      <a href="">
         <figure id="tarjeta">
-          <img src="images/jogos.png" class="frontal" alt="jogos" title="Eduka Kids">
+          <img src="images/jogo_velha.png" class="frontal" alt="jogo_velha" title="Eduka Kids">
           <figcaption class="trasera">
-            <h2 class="titulo">Jogos</h2>
+            <h2 class="titulo">Jogo da Velha</h2>
             <hr>
-            <p>Quebra Cabeça, Jogo da Memória </p>
+            <p>Teste </p>
           </figcaption>
         </figure>
       </a>
@@ -113,11 +113,11 @@ text-decoration: none;
     <div class="contenedor_tarjeta">
       <a href="">
         <figure id="tarjeta">
-          <img src="images/videos.png" class="frontal" alt="videos" title="Eduka Kids">
+          <img src="images/jogo_teste.png" class="frontal" alt="videos" title="Eduka Kids">
           <figcaption class="trasera">
-            <h2 class="titulo">Videos</h2>
+            <h2 class="titulo">Teste</h2>
             <hr>
-            <p>Atividades Práticas e Brincadeiras</p>
+            <p>Teste</p>
           </figcaption>
         </figure>
       </a>
