@@ -2,10 +2,15 @@ using System;
 using EdukaKids.Server.Controllers;
 using EdukaKids.Server.Data.DBContext;
 using EdukaKids.Server.Data.interfaces;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EdukaKids.Server.Data.Repositories
 {
-
+    // [Authorize]
+    [ApiController]
+    [AllowAnonymous]
+    [Route("api/[controller]")]
     public class LoginRepository : ILoginRepository {
 
         private readonly Context _dbContext;
