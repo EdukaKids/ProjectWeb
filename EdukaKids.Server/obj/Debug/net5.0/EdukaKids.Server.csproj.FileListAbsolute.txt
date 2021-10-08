@@ -266,3 +266,17 @@ C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\obj\Debug\net
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\obj\Debug\net5.0\EdukaKids.Server.genruntimeconfig.cache
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Debug\net5.0\appsettings.json
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Debug\net5.0\Publish\web.config
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Debug\net5.0\Publish\appsettings.json
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Debug\net5.0\Publish\EdukaKids.Server.deps.json
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Debug\net5.0\Publish\EdukaKids.Server.runtimeconfig.json
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Debug\net5.0\Publish\Publish\Publish\web.config
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Debug\net5.0\Publish\Publish\web.config
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Debug\net5.0\Publish\Publish\appsettings.json
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Debug\net5.0\Publish\Publish\EdukaKids.Server.deps.json
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Debug\net5.0\Publish\Publish\EdukaKids.Server.runtimeconfig.json
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Debug\net5.0\Publish\Publish\Publish\appsettings.json
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Debug\net5.0\Publish\Publish\Publish\EdukaKids.Server.deps.json
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Debug\net5.0\Publish\Publish\Publish\EdukaKids.Server.runtimeconfig.json
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Debug\net5.0\Pomelo.JsonObject.dll

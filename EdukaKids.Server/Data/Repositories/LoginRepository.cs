@@ -1,7 +1,4 @@
 using System;
-using System.Security.Cryptography;
-using System.Security.Policy;
-using System.Text;
 using EdukaKids.Server.Controllers;
 using EdukaKids.Server.Data.DBContext;
 using EdukaKids.Server.Data.interfaces;
@@ -17,23 +14,40 @@ namespace EdukaKids.Server.Data.Repositories
             _dbContext = dbContext;
         }
 
-        public void Logar(string nome) {
-            MD5 md5 = MD5.Create();
-            byte[] inputBytes = Encoding.ASCII.GetBytes("teste");
+        /*public async Task<Login> GetUser(){
+            return
+        }*/
+
+        public void Logar(string nome, string senha) {
+            /*MD5 md5 = MD5.Create();
+            byte[] inputBytes = Encoding.ASCII.GetBytes(senha);
             byte[] hash = md5.ComputeHash(inputBytes);
 
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < hash.Length; i++)
             {
                 sb.Append(hash[i].ToString("X2"));
-            }
+            }*/
 
             _dbContext.login.Add(new Login(){
                 id = Guid.NewGuid(),
-                nome = "Mauricio",
-                senha = sb.ToString()
+                dateLogin = DateTime.Now,
+                nome = nome,
+                senha = EncodeTo64(senha)
             });
             _dbContext.SaveChanges();
+        }
+
+        // Criptografa
+        static public string EncodeTo64(string toEncode)
+        {
+
+        byte[] toEncodeAsBytes = System.Text.ASCIIEncoding.ASCII.GetBytes(toEncode);
+
+        string returnValue = System.Convert.ToBase64String(toEncodeAsBytes);
+
+        return returnValue;
+
         }
     }
 }

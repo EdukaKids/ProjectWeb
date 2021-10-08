@@ -13,12 +13,17 @@ namespace EdukaKids.Server.Controllers
             _LoginRepository = loginRepository;
         }
 
-        [HttpGet]
-        public IActionResult Get()
+        /*[HttpGet]
+        public IActionResult Get() {
+            return Ok(_LoginRepository.GetUser());
+        }*/
+
+        [HttpPost]
+        public IActionResult Post([FromForm] string nome, [FromForm] string senha)
         {
 
-            _LoginRepository.Logar("Hello World!!");
-            return Ok("Hello World!!");
+            _LoginRepository.Logar(nome, senha);
+            return Ok("Dados Salvos");
         }
     }
 }

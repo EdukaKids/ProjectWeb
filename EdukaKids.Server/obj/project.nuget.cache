@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pYH9EhMTdZr+6L3Omh9R0bPxUusEk27EurZH6ecKY0sR0F3SSLi5OhSql13qB9eetWJ50SbFyBV7EI4G5V2WHQ==",
+  "dgSpecHash": "FY7eBQdAYwV9Ff4JAeXws4RzECe3IH2NMJ1Fk17enqMng/xxJ7k987sfOU5DaoMR+M+yANZXohS5gav85l4Z5w==",
   "success": true,
   "projectFilePath": "C:\\Users\\mauri\\OneDrive\\Documentos\\Dev\\ProjectWeb\\EdukaKids.Server\\EdukaKids.Server.csproj",
   "expectedPackageFiles": [
@@ -67,7 +67,7 @@
     "C:\\Users\\mauri\\.nuget\\packages\\mvp.xml.netstandard\\1.1.1\\mvp.xml.netstandard.1.1.1.nupkg.sha512",
     "C:\\Users\\mauri\\.nuget\\packages\\mysqlconnector\\1.2.1\\mysqlconnector.1.2.1.nupkg.sha512",
     "C:\\Users\\mauri\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
-    "C:\\Users\\mauri\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
+    "C:\\Users\\mauri\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\mauri\\.nuget\\packages\\ngettext\\0.6.6\\ngettext.0.6.6.nupkg.sha512",
     "C:\\Users\\mauri\\.nuget\\packages\\peachpie.app\\1.0.6\\peachpie.app.1.0.6.nupkg.sha512",
     "C:\\Users\\mauri\\.nuget\\packages\\peachpie.aspnetcore.web\\1.0.6\\peachpie.aspnetcore.web.1.0.6.nupkg.sha512",
@@ -84,6 +84,8 @@
     "C:\\Users\\mauri\\.nuget\\packages\\peachpie.library.xmldom\\1.0.6\\peachpie.library.xmldom.1.0.6.nupkg.sha512",
     "C:\\Users\\mauri\\.nuget\\packages\\peachpie.microsoft.codeanalysis\\3.7.1\\peachpie.microsoft.codeanalysis.3.7.1.nupkg.sha512",
     "C:\\Users\\mauri\\.nuget\\packages\\peachpie.runtime\\1.0.6\\peachpie.runtime.1.0.6.nupkg.sha512",
+    "C:\\Users\\mauri\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\5.0.0-alpha.1\\pomelo.entityframeworkcore.mysql.5.0.0-alpha.1.nupkg.sha512",
+    "C:\\Users\\mauri\\.nuget\\packages\\pomelo.jsonobject\\2.2.1\\pomelo.jsonobject.2.2.1.nupkg.sha512",
     "C:\\Users\\mauri\\.nuget\\packages\\rationals\\1.4.0\\rationals.1.4.0.nupkg.sha512",
     "C:\\Users\\mauri\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\mauri\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",

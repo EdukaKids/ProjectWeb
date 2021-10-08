@@ -1,10 +1,9 @@
 $(document).ready(function (){
-    
     // carrega pagina login se não estiver logado
     if(window.localStorage.length === 0)
-        window.location.href = "https://localhost:5001/login.php"
+        window.location.href = window.location.origin + "/login.php"
     else{
-        window.location.href = "https://localhost:5001/"
+        window.location.href =  window.location.origin
     }
 
     //Varaiveis locais   

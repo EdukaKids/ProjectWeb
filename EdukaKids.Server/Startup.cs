@@ -27,8 +27,9 @@ namespace EdukaKids.Server
         {
             services.AddControllers();
 
+            var connectionString = Configuration.GetConnectionString("EdukaKids");
             services.AddDbContext<Context>(opt =>
-                     opt.UseSqlServer(Configuration.GetConnectionString("EdukaKids")));
+                     opt.UseMySql(connectionString));
             
             services.AddSwaggerGen(c =>
             {
