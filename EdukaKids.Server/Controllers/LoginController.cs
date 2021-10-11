@@ -1,10 +1,13 @@
 ﻿using EdukaKids.Server.Data.interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EdukaKids.Server.Controllers
 {
-    [Route("api/[controller]")]
+    // [Authorize]
     [ApiController]
+    [Route("api/[controller]")]
+    [AllowAnonymous]
     public class LoginController : ControllerBase
     {
         private readonly ILoginRepository _LoginRepository;
@@ -18,12 +21,12 @@ namespace EdukaKids.Server.Controllers
             return Ok(_LoginRepository.GetUser());
         }*/
 
-        [HttpPost]
-        public IActionResult Post([FromForm] string nome, [FromForm] string senha)
+        [HttpGet]
+        public IActionResult Get([FromBody] dynamic user)
         {
 
-            _LoginRepository.Logar(nome, senha);
-            return Ok("Dados Salvos");
+            
+            return Ok(_LoginRepository.Logar(user.nome, user.senha));
         }
     }
 }

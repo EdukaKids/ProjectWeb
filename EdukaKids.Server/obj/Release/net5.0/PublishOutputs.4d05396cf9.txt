@@ -46,6 +46,7 @@ C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\wwwro
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\wwwroot\js\question.js
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\wwwroot\js\script.js
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\wwwroot\js\validar.js
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\Publish\Publish\Publish\web.config
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\Publish\Publish\web.config
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\Publish\web.config
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\appsettings.json
@@ -55,6 +56,9 @@ C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\Publi
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\Publish\Publish\appsettings.json
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\Publish\Publish\EdukaKids.Server.deps.json
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\Publish\Publish\EdukaKids.Server.runtimeconfig.json
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\Publish\Publish\Publish\appsettings.json
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\Publish\Publish\Publish\EdukaKids.Server.deps.json
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\Publish\Publish\Publish\EdukaKids.Server.runtimeconfig.json
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\EdukaKids.Server.dll
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\EdukaKids.Server.runtimeconfig.json
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\EdukaKids.Server.pdb
@@ -102,6 +106,8 @@ C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\Peach
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\Peachpie.Library.XmlDom.dll
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\Peachpie.Microsoft.CodeAnalysis.dll
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\Peachpie.Runtime.dll
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\Pomelo.JsonObject.dll
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\Rationals.dll
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\SixLabors.Fonts.dll
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\publish\SixLabors.ImageSharp.dll

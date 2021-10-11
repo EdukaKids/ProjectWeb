@@ -1,11 +1,10 @@
 $(document).ready(function (){
-    console.log(window.location.origin)
     // carrega pagina login se não estiver logado
-    if(window.localStorage.length === 0)
+    /*if(window.localStorage.length === 0)
         window.location.href = window.location.origin + "/login.php"
     else{
         window.location.href =  window.location.origin
-    }
+    }*/
 
     //Varaiveis locais   
     var _containerBtn = $(".jbtn-voltar");

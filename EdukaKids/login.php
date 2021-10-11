@@ -1,29 +1,4 @@
-<?php
-$nome = $_POST['nome'];
-$senha = $_POST['senha'];
 
-$curl = curl_init();
-
-curl_setopt_array($curl, array(
-  CURLOPT_URL => '/api/Login',
-  CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_ENCODING => '',
-  CURLOPT_MAXREDIRS => 10,
-  CURLOPT_TIMEOUT => -1,
-  CURLOPT_FOLLOWLOCATION => true,
-  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => 'POST',
-  CURLOPT_POSTFIELDS => 'nome=Mauricio&senha=%40Mauricio2212',
-  CURLOPT_HTTPHEADER => array(
-    'Content-Type: application/x-www-form-urlencoded'
-  ),
-));
-
-$response = curl_exec($curl);
-
-curl_close($curl);
-echo $response;
-?>
 
 <!DOCTYPE html>
 <html>
@@ -43,6 +18,8 @@ echo $response;
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     </head>
     <body>
     <!-- Banner Padrão do login -->
@@ -59,24 +36,23 @@ echo $response;
     </div>
 
     <!-- Formulario de login -->
-    <form method="post" class="container mt-4">
-        <div class="row d-flex justify-content-center">
-            <div class="mb-3 col-5">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="nome" name="nome" aria-describedby="emailHelp">
-            </div>
-        </div>
 
-        <div class="row d-flex justify-content-center">
-            <div class="mb-3 col-5">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="senha" name="senha">
-            </div>
+    <div class="row d-flex justify-content-center">
+        <div class="mb-3 col-5">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="nome" name="nome" aria-describedby="emailHelp">
         </div>
-        <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="mb-3 col-5">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="senha" name="senha">
         </div>
-    </form>
+    </div>
+    <div class="d-flex justify-content-center">
+        <button id="logar" class="btn btn-primary">Submit</button>
+    </div>
 
     </br>
 
@@ -103,7 +79,26 @@ echo $response;
 </html>
 
 <script>
-    
+    $("#logar").on("click", function() {
+        var data = {
+            'nome': $("#nome"),
+            'senha': $("#senha")
+        };
+        var config = {
+            method: 'get',
+            url: 'https://localhost:5001/api/Login',
+            headers: { 
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            data : data
+        };
+        axios(config)
+            .then(res => {
+                console.log(res)
+            }).catch(err => {
+                console.log('Error: ' + err)
+            })
+    });
 </script>
 
 <style>

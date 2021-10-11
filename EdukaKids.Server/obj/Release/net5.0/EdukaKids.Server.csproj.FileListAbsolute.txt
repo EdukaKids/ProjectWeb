@@ -141,3 +141,9 @@ C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Release\n
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Release\net5.0\Publish\Publish\appsettings.json
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Release\net5.0\Publish\Publish\EdukaKids.Server.deps.json
 C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Release\net5.0\Publish\Publish\EdukaKids.Server.runtimeconfig.json
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Release\net5.0\Publish\Publish\Publish\web.config
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Release\net5.0\Publish\Publish\Publish\appsettings.json
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Release\net5.0\Publish\Publish\Publish\EdukaKids.Server.deps.json
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Release\net5.0\Publish\Publish\Publish\EdukaKids.Server.runtimeconfig.json
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Release\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\bin\Release\net5.0\Pomelo.JsonObject.dll

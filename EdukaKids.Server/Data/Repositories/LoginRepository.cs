@@ -1,16 +1,11 @@
 using System;
+using System.Linq;
 using EdukaKids.Server.Controllers;
 using EdukaKids.Server.Data.DBContext;
 using EdukaKids.Server.Data.interfaces;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
 
 namespace EdukaKids.Server.Data.Repositories
 {
-    // [Authorize]
-    [ApiController]
-    [AllowAnonymous]
-    [Route("api/[controller]")]
     public class LoginRepository : ILoginRepository {
 
         private readonly Context _dbContext;
@@ -23,7 +18,7 @@ namespace EdukaKids.Server.Data.Repositories
             return
         }*/
 
-        public void Logar(string nome, string senha) {
+        public Login Logar(string nome, string senha) {
             /*MD5 md5 = MD5.Create();
             byte[] inputBytes = Encoding.ASCII.GetBytes(senha);
             byte[] hash = md5.ComputeHash(inputBytes);
@@ -34,13 +29,15 @@ namespace EdukaKids.Server.Data.Repositories
                 sb.Append(hash[i].ToString("X2"));
             }*/
 
-            _dbContext.login.Add(new Login(){
+            /*_dbContext.login.Add(new Login(){
                 id = Guid.NewGuid(),
                 dateLogin = DateTime.Now,
                 nome = nome,
                 senha = EncodeTo64(senha)
             });
-            _dbContext.SaveChanges();
+            _dbContext.SaveChanges();*/
+
+            return _dbContext.login.FirstOrDefault(l => l.nome == nome);
         }
 
         // Criptografa

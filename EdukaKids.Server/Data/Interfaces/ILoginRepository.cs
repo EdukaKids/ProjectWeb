@@ -6,6 +6,6 @@ namespace EdukaKids.Server.Data.interfaces
 
     public interface ILoginRepository {
         //Task<Login> GetUser();
-        void Logar(string nome, string senha);
+        Login Logar(string nome, string senha);
     }
 }
