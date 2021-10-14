@@ -19,7 +19,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </head>
     <body>
     <!-- Banner Padrão do login -->
@@ -36,18 +36,17 @@
     </div>
 
     <!-- Formulario de login -->
-
     <div class="row d-flex justify-content-center">
         <div class="mb-3 col-5">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="nome" name="nome" aria-describedby="emailHelp">
+            <label for="nome" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="nome" aria-describedby="emailHelp">
         </div>
     </div>
 
     <div class="row d-flex justify-content-center">
         <div class="mb-3 col-5">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="senha" name="senha">
+            <label for="senha" class="form-label">Password</label>
+            <input type="password" class="form-control" id="senha">
         </div>
     </div>
     <div class="d-flex justify-content-center">
@@ -80,21 +79,24 @@
 
 <script>
     $("#logar").on("click", function() {
-        var data = {
-            'nome': $("#nome"),
-            'senha': $("#senha")
-        };
+        var data = JSON.stringify({
+            "nome": $('#nome').text.toString(),
+            "senha": $('#senha').text.toString()
+        });
         var config = {
-            method: 'get',
-            url: 'https://localhost:5001/api/Login',
+            method: 'post',
+            url: 'https://localhost:5001/api/Login/BuscaLoginValido',
             headers: { 
-                'Content-Type': 'application/x-www-form-urlencoded'
+                'Content-Type': 'application/json'
             },
-            data : data
+            data: data
         };
         axios(config)
             .then(res => {
-                console.log(res)
+                if(res != null){
+                    window.localStorage.setItem('login', res)
+                    window.location.href = location.origin
+                }
             }).catch(err => {
                 console.log('Error: ' + err)
             })
