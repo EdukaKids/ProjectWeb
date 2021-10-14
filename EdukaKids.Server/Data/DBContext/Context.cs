@@ -8,6 +8,6 @@ namespace EdukaKids.Server.Data.DBContext
         public Context(DbContextOptions<Context> options) : base(options) {}
 
         // Entities
-        public DbSet<Login> login { get; set; }
+        public DbSet<Login> Login { get; set; }
     }
 }

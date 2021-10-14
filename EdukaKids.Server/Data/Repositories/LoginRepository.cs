@@ -37,7 +37,15 @@ namespace EdukaKids.Server.Data.Repositories
             });
             _dbContext.SaveChanges();*/
 
-            return _dbContext.login.FirstOrDefault(l => l.nome == nome);
+            var consulta = _dbContext.Login.SingleOrDefault(l => l.Nome == nome);
+
+            if(DecodeFrom64(consulta.Senha) == senha){
+                return consulta;
+            }
+
+            return null;
+
+            
         }
 
         // Criptografa
@@ -50,6 +58,20 @@ namespace EdukaKids.Server.Data.Repositories
 
         return returnValue;
 
+        }
+
+        static public string DecodeFrom64(string dados)
+        {
+            try
+            {
+                byte[] dadosAsBytes = System.Convert.FromBase64String(dados);
+                string resultado = System.Text.ASCIIEncoding.ASCII.GetString(dadosAsBytes);
+                return resultado;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

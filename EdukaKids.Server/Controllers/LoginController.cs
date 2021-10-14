@@ -1,4 +1,5 @@
 ﻿using EdukaKids.Server.Data.interfaces;
+using EdukaKids.Server.ViewModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,16 +17,9 @@ namespace EdukaKids.Server.Controllers
             _LoginRepository = loginRepository;
         }
 
-        /*[HttpGet]
-        public IActionResult Get() {
-            return Ok(_LoginRepository.GetUser());
-        }*/
-
-        [HttpGet]
-        public IActionResult Get([FromBody] dynamic user)
+        [HttpPost("BuscaLoginValido")]
+        public IActionResult Post([FromBody] User user)
         {
-
-            
             return Ok(_LoginRepository.Logar(user.nome, user.senha));
         }
     }
