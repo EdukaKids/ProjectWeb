@@ -19,23 +19,6 @@ namespace EdukaKids.Server.Data.Repositories
         }*/
 
         public Login Logar(string nome, string senha) {
-            /*MD5 md5 = MD5.Create();
-            byte[] inputBytes = Encoding.ASCII.GetBytes(senha);
-            byte[] hash = md5.ComputeHash(inputBytes);
-
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < hash.Length; i++)
-            {
-                sb.Append(hash[i].ToString("X2"));
-            }*/
-
-            /*_dbContext.login.Add(new Login(){
-                id = Guid.NewGuid(),
-                dateLogin = DateTime.Now,
-                nome = nome,
-                senha = EncodeTo64(senha)
-            });
-            _dbContext.SaveChanges();*/
 
             var consulta = _dbContext.Login.SingleOrDefault(l => l.Nome == nome);
 

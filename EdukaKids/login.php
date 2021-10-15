@@ -20,6 +20,13 @@
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script>
+            $(document).ready(function (){
+                if(localStorage.length != 0)
+                    window.location.href = location.origin
+                
+            })
+        </script>
     </head>
     <body>
     <!-- Banner Padrão do login -->
@@ -80,8 +87,8 @@
 <script>
     $("#logar").on("click", function() {
         var data = JSON.stringify({
-            "nome": $('#nome').text.toString(),
-            "senha": $('#senha').text.toString()
+            "nome": $('#nome').val(),
+            "senha": $('#senha').val()
         });
         var config = {
             method: 'post',
