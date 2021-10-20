@@ -30,6 +30,7 @@ namespace EdukaKids.Server.Data.Repositories
 
             _dbContext.login.Add(new Login(){
                 id = Guid.NewGuid(),
+                dateCreated = DateTime.Now,
                 nome = "Mauricio",
                 senha = sb.ToString()
             });

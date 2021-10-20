@@ -1,18 +1,23 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EdukaKids.Server.Controllers
 {
     [Table("login")]
     public class Login {
+        [Key]
         [Column("id")]
-        public Guid id { get; set; }
+        public Guid Id { get; set; }
+
         [Column("dateLogin")]
-        public DateTime dateLogin { get; set; }
+        public DateTime DateLogin { get; set; }
+
         [Column("nome")]
-        public string nome { get; set; }
+        public string Nome { get; set; }
+
         [Column("senha")]
-        public string senha { get; set; }
+        public string Senha { get; set; }
         /*[Column("Token")]
         public string token { get; set; }
         [Column("Expired")]

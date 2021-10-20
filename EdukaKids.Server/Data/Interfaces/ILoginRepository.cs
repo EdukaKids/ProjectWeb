@@ -1,7 +1,11 @@
+using System.Threading.Tasks;
+using EdukaKids.Server.Controllers;
+
 namespace EdukaKids.Server.Data.interfaces
 {
 
     public interface ILoginRepository {
-        void Logar(string nome);
+        //Task<Login> GetUser();
+        Login Logar(string nome, string senha);
     }
 }

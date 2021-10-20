@@ -1,10 +1,14 @@
 ﻿using EdukaKids.Server.Data.interfaces;
+using EdukaKids.Server.ViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EdukaKids.Server.Controllers
 {
-    [Route("api/[controller]")]
+    // [Authorize]
     [ApiController]
+    [Route("api/[controller]")]
+    [AllowAnonymous]
     public class LoginController : ControllerBase
     {
         private readonly ILoginRepository _LoginRepository;
@@ -13,12 +17,10 @@ namespace EdukaKids.Server.Controllers
             _LoginRepository = loginRepository;
         }
 
-        [HttpGet]
-        public IActionResult Get()
+        [HttpPost("BuscaLoginValido")]
+        public IActionResult Post([FromBody] User user)
         {
-
-            _LoginRepository.Logar("Hello World!!");
-            return Ok("Hello World!!");
+            return Ok(_LoginRepository.Logar(user.nome, user.senha));
         }
     }
 }

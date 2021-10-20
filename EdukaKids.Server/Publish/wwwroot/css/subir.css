@@ -1,0 +1,26 @@
+/*##Style*/
+/*#Botao Voltar*/
+.btn-voltar{
+    display: none;
+    z-index: 10;
+    position: fixed;
+    bottom: 4%;
+    right: 3%;
+    width: 50px;
+    height: 40px;
+    background-color: #0479F6;
+    border-radius: 6px;
+}
+.btn-voltar-link{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.8em;
+	text-decoration: none;
+}
+
+

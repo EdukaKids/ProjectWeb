@@ -1,7 +1,4 @@
-<?php
-$nome = $_POST['nome'];
-$senha = $_POST['senha'];
-?>
+
 
 <!DOCTYPE html>
 <html>
@@ -21,6 +18,15 @@ $senha = $_POST['senha'];
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script>
+            $(document).ready(function (){
+                if(localStorage.length != 0)
+                    window.location.href = location.origin
+                
+            })
+        </script>
     </head>
     <body>
     <!-- Banner Padrão do login -->
@@ -37,24 +43,22 @@ $senha = $_POST['senha'];
     </div>
 
     <!-- Formulario de login -->
-    <form method="get" action="/api/Login" class="container mt-4">
-        <div class="row d-flex justify-content-center">
-            <div class="mb-3 col-5">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="nome" name="nome" aria-describedby="emailHelp">
-            </div>
+    <div class="row d-flex justify-content-center">
+        <div class="mb-3 col-5">
+            <label for="nome" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="nome" aria-describedby="emailHelp">
         </div>
+    </div>
 
-        <div class="row d-flex justify-content-center">
-            <div class="mb-3 col-5">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="senha" name="senha">
-            </div>
+    <div class="row d-flex justify-content-center">
+        <div class="mb-3 col-5">
+            <label for="senha" class="form-label">Password</label>
+            <input type="password" class="form-control" id="senha">
         </div>
-        <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-    </form>
+    </div>
+    <div class="d-flex justify-content-center">
+        <button id="logar" class="btn btn-primary">Submit</button>
+    </div>
 
     </br>
 
@@ -79,6 +83,32 @@ $senha = $_POST['senha'];
             
     </body>
 </html>
+
+<script>
+    $("#logar").on("click", function() {
+        var data = JSON.stringify({
+            "nome": $('#nome').val(),
+            "senha": $('#senha').val()
+        });
+        var config = {
+            method: 'post',
+            url: 'https://localhost:5001/api/Login/BuscaLoginValido',
+            headers: { 
+                'Content-Type': 'application/json'
+            },
+            data: data
+        };
+        axios(config)
+            .then(res => {
+                if(res != null){
+                    window.localStorage.setItem('login', res)
+                    window.location.href = location.origin
+                }
+            }).catch(err => {
+                console.log('Error: ' + err)
+            })
+    });
+</script>
 
 <style>
     *{

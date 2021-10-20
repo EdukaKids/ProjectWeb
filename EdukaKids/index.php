@@ -82,7 +82,7 @@ text-decoration: none;
 			</a>
 			</li>
 
-			<li><a href="quiz/quiz.html">
+			<li><a href="quiz/quiz.php">
 				<img src="images/2.png" alt="" class="imgslide">
 				<section class="caption">
 					<h2></h2>
