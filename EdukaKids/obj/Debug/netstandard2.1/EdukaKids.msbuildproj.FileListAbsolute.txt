@@ -5,10 +5,3 @@ C:\Users\LAB-A18\Documents\Ciência da Computação\TCC\EdukaKids\EdukaKids\Eduk
 C:\Users\LAB-A18\Documents\Ciência da Computação\TCC\EdukaKids\EdukaKids\EdukaKids\obj\Debug\netstandard2.1\EdukaKids.msbuildproj.CoreCompileInputs.cache
 C:\Users\LAB-A18\Documents\Ciência da Computação\TCC\EdukaKids\EdukaKids\EdukaKids\obj\Debug\netstandard2.1\EdukaKids.dll
 C:\Users\LAB-A18\Documents\Ciência da Computação\TCC\EdukaKids\EdukaKids\EdukaKids\obj\Debug\netstandard2.1\EdukaKids.pdb
-C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids\bin\Debug\netstandard2.1\EdukaKids.deps.json
-C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids\bin\Debug\netstandard2.1\EdukaKids.dll
-C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids\bin\Debug\netstandard2.1\EdukaKids.pdb
-C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids\obj\Debug\netstandard2.1\EdukaKids.msbuildproj.AssemblyReference.cache
-C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids\obj\Debug\netstandard2.1\EdukaKids.msbuildproj.CoreCompileInputs.cache
-C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids\obj\Debug\netstandard2.1\EdukaKids.dll
-C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids\obj\Debug\netstandard2.1\EdukaKids.pdb

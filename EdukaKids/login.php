@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -45,8 +43,10 @@
     <!-- Formulario de login -->
     <div class="row d-flex justify-content-center">
         <div class="mb-3 col-5">
+           
             <label for="nome" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="nome" aria-describedby="emailHelp">
+            <input type="name" class="form-control" id="nome" aria-describedby="emailHelp">
+            
         </div>
     </div>
 
@@ -57,7 +57,7 @@
         </div>
     </div>
     <div class="d-flex justify-content-center">
-        <button id="logar" class="btn btn-primary">Submit</button>
+        <button name="enviar" id="logar" class="btn btn-primary">Submit</button>
     </div>
 
     </br>

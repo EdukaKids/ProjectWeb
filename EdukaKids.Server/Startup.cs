@@ -10,6 +10,9 @@ using Microsoft.Extensions.Configuration;
 using EdukaKids.Server.Data.Repositories;
 using System.IO;
 using EdukaKids.Server.Data.interfaces;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.Text;
+using Microsoft.IdentityModel.Tokens;
 
 namespace EdukaKids.Server
 {
@@ -26,17 +29,19 @@ namespace EdukaKids.Server
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddCors();
+            services.AddControllers();
 
             var connectionString = Configuration.GetConnectionString("EdukaKids");
             services.AddDbContext<Context>(opt =>
-                     opt.UseMySql(connectionString));
+                     opt.UseSqlServer(connectionString));
             
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TodoApi", Version = "v1" });
             });
 
-            services.AddScoped<ILoginRepository, LoginRepository>();
+            services.AddScoped<IUsuariosRepository, UsuariosRepository>();
 
             // Adds a default in-memory implementation of IDistributedCache.
             services.AddDistributedMemoryCache();
@@ -50,6 +55,25 @@ namespace EdukaKids.Server
             services.AddPhp(options =>
             {
 
+            });
+            
+            var key = Encoding.ASCII.GetBytes(Settings.secret);
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
             });
         }
 
@@ -70,6 +94,14 @@ namespace EdukaKids.Server
 
             app.UseHttpsRedirection();
             app.UseRouting();
+
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
+
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

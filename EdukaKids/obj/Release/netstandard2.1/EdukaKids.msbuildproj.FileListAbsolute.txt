@@ -1,7 +1,0 @@
-C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids\bin\Release\netstandard2.1\EdukaKids.deps.json
-C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids\bin\Release\netstandard2.1\EdukaKids.dll
-C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids\bin\Release\netstandard2.1\EdukaKids.pdb
-C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids\obj\Release\netstandard2.1\EdukaKids.msbuildproj.AssemblyReference.cache
-C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids\obj\Release\netstandard2.1\EdukaKids.msbuildproj.CoreCompileInputs.cache
-C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids\obj\Release\netstandard2.1\EdukaKids.dll
-C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids\obj\Release\netstandard2.1\EdukaKids.pdb

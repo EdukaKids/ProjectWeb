@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj": {}
+    "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj": {}
   },
   "projects": {
-    "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj": {
+    "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj",
+        "projectUniqueName": "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj",
         "projectName": "EdukaKids",
-        "projectPath": "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj",
+        "projectPath": "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj",
         "packagesPath": "C:\\Users\\LAB-A18\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\obj\\",
+        "outputPath": "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LAB-A18\\AppData\\Roaming\\NuGet\\NuGet.Config",

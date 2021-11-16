@@ -6,8 +6,3 @@ build_property.ProjectTypeGuids =
 build_property.PublishSingleFile = 
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
-<<<<<<< HEAD
-=======
-build_property.RootNamespace = EdukaKids.Server
-build_property.ProjectDir = C:\Users\mauri\OneDrive\Documentos\Dev\ProjectWeb\EdukaKids.Server\
->>>>>>> b94ea58c2ecbc27887d1bd8d03589b4d0bd2a745

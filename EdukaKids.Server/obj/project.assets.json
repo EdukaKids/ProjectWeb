@@ -10456,11 +10456,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids.Server\\EdukaKids.Server.csproj",
+      "projectUniqueName": "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids.Server\\EdukaKids.Server.csproj",
       "projectName": "EdukaKids.Server",
-      "projectPath": "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids.Server\\EdukaKids.Server.csproj",
+      "projectPath": "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids.Server\\EdukaKids.Server.csproj",
       "packagesPath": "C:\\Users\\LAB-A18\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids.Server\\obj\\",
+      "outputPath": "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids.Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LAB-A18\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10477,8 +10477,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj": {
-              "projectPath": "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj",
+            "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj": {
+              "projectPath": "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj",
               "privateAssets": "none"
             }
           }
