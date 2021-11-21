@@ -92,7 +92,7 @@
         });
         var config = {
             method: 'post',
-            url: 'https://localhost:5001/api/Login/BuscaLoginValido',
+            url: 'https://localhost:5001/api/User/BuscaLoginValido',
             headers: { 
                 'Content-Type': 'application/json'
             },
@@ -101,7 +101,7 @@
         axios(config)
             .then(res => {
                 if(res != null){
-                    window.localStorage.setItem('login', res)
+                    window.localStorage.setItem('login', res.data)
                     window.location.href = location.origin
                 }
             }).catch(err => {

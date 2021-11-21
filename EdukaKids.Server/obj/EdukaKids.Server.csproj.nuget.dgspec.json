@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids.Server\\EdukaKids.Server.csproj": {}
+    "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids.Server\\EdukaKids.Server.csproj": {}
   },
   "projects": {
-    "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids.Server\\EdukaKids.Server.csproj": {
+    "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids.Server\\EdukaKids.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids.Server\\EdukaKids.Server.csproj",
+        "projectUniqueName": "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids.Server\\EdukaKids.Server.csproj",
         "projectName": "EdukaKids.Server",
-        "projectPath": "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids.Server\\EdukaKids.Server.csproj",
+        "projectPath": "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids.Server\\EdukaKids.Server.csproj",
         "packagesPath": "C:\\Users\\LAB-A18\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids.Server\\obj\\",
+        "outputPath": "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids.Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LAB-A18\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj": {
-                "projectPath": "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj",
+              "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj": {
+                "projectPath": "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj",
                 "privateAssets": "none"
               }
             }
@@ -77,17 +77,21 @@
               "target": "Package",
               "version": "[5.0.0-alpha.1, )"
             },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.2.3, )"
+            },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
-              "version": "[6.1.5, )"
+              "version": "[6.2.3, )"
             },
             "Swashbuckle.AspNetCore.SwaggerGen": {
               "target": "Package",
-              "version": "[6.1.5, )"
+              "version": "[6.2.3, )"
             },
             "Swashbuckle.AspNetCore.SwaggerUI": {
               "target": "Package",
-              "version": "[6.1.5, )"
+              "version": "[6.2.3, )"
             }
           },
           "imports": [
@@ -112,14 +116,14 @@
         }
       }
     },
-    "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj": {
+    "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj",
+        "projectUniqueName": "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj",
         "projectName": "EdukaKids",
-        "projectPath": "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj",
+        "projectPath": "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj",
         "packagesPath": "C:\\Users\\LAB-A18\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\obj\\",
+        "outputPath": "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LAB-A18\\AppData\\Roaming\\NuGet\\NuGet.Config",

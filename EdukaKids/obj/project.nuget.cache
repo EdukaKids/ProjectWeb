@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7/uNIF8RlhDw/WM19lF+u5iInEM2YhB+FxAjXlDef86zS/03N5AikI6w7kKvKJiHMClEH7HFaGj37dZmzKw9Dw==",
+  "dgSpecHash": "7x/bDjs8qSRrwf4IeJiCJrwVQBwT6nn2lnidFLacUfZCmSlmjKGyOgGEGvKIHPyrS5UjZF0Ca5a2BzafLaV9PQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj",
+  "projectFilePath": "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids\\EdukaKids.msbuildproj",
   "expectedPackageFiles": [
     "C:\\Users\\LAB-A18\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\LAB-A18\\.nuget\\packages\\devsense.php.parser\\8.0.6567\\devsense.php.parser.8.0.6567.nupkg.sha512",

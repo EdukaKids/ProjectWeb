@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i67/sGTdclfACbbXTKfo7AKjKg/iT3qyuuSUgZvpzS3kCNTb7TacvgM4yvMTmbqq/Phij9XDoaDgGV50fVcrIw==",
+  "dgSpecHash": "NTFa9s46dfSzFPK9DtPqncthAq2hZFTuGOxaTjkkSgyUQ9QBiEi9jFavAoYrwJN2JlG/98LD0RHie1lUl2mtuw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids.Server\\EdukaKids.Server.csproj",
+  "projectFilePath": "C:\\Users\\LAB-A18\\Documents\\Ciência da Computação\\TCC\\EdukaKids\\EdukaKids\\EdukaKids.Server\\EdukaKids.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LAB-A18\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\LAB-A18\\.nuget\\packages\\devsense.php.parser\\8.0.6567\\devsense.php.parser.8.0.6567.nupkg.sha512",
@@ -37,6 +37,7 @@
     "C:\\Users\\LAB-A18\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.10\\microsoft.entityframeworkcore.relational.5.0.10.nupkg.sha512",
     "C:\\Users\\LAB-A18\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.10\\microsoft.entityframeworkcore.sqlserver.5.0.10.nupkg.sha512",
     "C:\\Users\\LAB-A18\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.10\\microsoft.entityframeworkcore.tools.5.0.10.nupkg.sha512",
+    "C:\\Users\\LAB-A18\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\LAB-A18\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\LAB-A18\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\LAB-A18\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
@@ -111,9 +112,10 @@
     "C:\\Users\\LAB-A18\\.nuget\\packages\\sixlabors.fonts\\1.0.0-beta0013\\sixlabors.fonts.1.0.0-beta0013.nupkg.sha512",
     "C:\\Users\\LAB-A18\\.nuget\\packages\\sixlabors.imagesharp\\1.0.0\\sixlabors.imagesharp.1.0.0.nupkg.sha512",
     "C:\\Users\\LAB-A18\\.nuget\\packages\\sixlabors.imagesharp.drawing\\1.0.0-beta0010\\sixlabors.imagesharp.drawing.1.0.0-beta0010.nupkg.sha512",
-    "C:\\Users\\LAB-A18\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.1.5\\swashbuckle.aspnetcore.swagger.6.1.5.nupkg.sha512",
-    "C:\\Users\\LAB-A18\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.1.5\\swashbuckle.aspnetcore.swaggergen.6.1.5.nupkg.sha512",
-    "C:\\Users\\LAB-A18\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.1.5\\swashbuckle.aspnetcore.swaggerui.6.1.5.nupkg.sha512",
+    "C:\\Users\\LAB-A18\\.nuget\\packages\\swashbuckle.aspnetcore\\5.3.0\\swashbuckle.aspnetcore.5.3.0.nupkg.sha512",
+    "C:\\Users\\LAB-A18\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\LAB-A18\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\LAB-A18\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
     "C:\\Users\\LAB-A18\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\LAB-A18\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\LAB-A18\\.nuget\\packages\\system.codedom\\4.7.0\\system.codedom.4.7.0.nupkg.sha512",
@@ -216,5 +218,16 @@
     "C:\\Users\\LAB-A18\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\LAB-A18\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "EdukaKids.Server depende de Swashbuckle.AspNetCore (>= 5.2.3), mas Swashbuckle.AspNetCore 5.2.3 não foi encontrado. A melhor correspondência aproximada de Swashbuckle.AspNetCore 5.3.0 foi resolvida.",
+      "libraryId": "Swashbuckle.AspNetCore",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

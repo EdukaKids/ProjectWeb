@@ -4,6 +4,8 @@ using System.Threading.Tasks;
 using EdukaKids.Server.Controllers;
 using EdukaKids.Server.Data.DBContext;
 using EdukaKids.Server.Data.interfaces;
+using EdukaKids.Server.Entities.DTO;
+using EdukaKids.Server.Services;
 using EdukaKids.Server.ViewModel;
 using Microsoft.EntityFrameworkCore;
 
@@ -23,11 +25,17 @@ namespace EdukaKids.Server.Data.Repositories
 
         public Usuarios Logar(string nome, string senha) {
 
-            var consulta = _dbContext.Usuarios.SingleOrDefault(l => l.Nome == nome);
+            var consulta = _dbContext.Usuarios.SingleOrDefault(l => l.Nome == nome && l.Senha == EncodeTo64(senha));
+
+            var token = TokenService.GenerateToken(consulta);
+
+            DateTime dateTime = DateTime.Now.AddHours(2);
 
             if(DecodeFrom64(consulta.Senha) == senha){
                 if(!consulta.IsOnline){
                     consulta.IsOnline = true;
+                    consulta.token = token;
+                    consulta.expired = dateTime;
                     _dbContext.Usuarios.Update(consulta).State = EntityState.Modified;
                     _dbContext.SaveChanges();
                 }
@@ -39,9 +47,32 @@ namespace EdukaKids.Server.Data.Repositories
             
         }
 
-        public async Task Cadastrar(CadastroUser newUser){
-            object senhaExistente = await _dbContext.Usuarios.FirstOrDefaultAsync(x => 
-                                            x.Senha == newUser.NewSenha);
+        public async Task Cadastrar(CadastroDTO newUser)
+        {
+            try 
+            {
+                string senhaCodification = EncodeTo64(newUser.senha);
+                var senhaExistente = _dbContext.Usuarios.FirstOrDefaultAsync(x => 
+                                                x.Senha == senhaCodification).Result;
+
+                if(senhaExistente == null) {
+                    await _dbContext.Usuarios.AddAsync(new Usuarios{
+                        Id = Guid.NewGuid().ToString(),
+                        DateLogin = DateTime.Now,
+                        Nome = newUser.name,
+                        Sobrenome = newUser.sobrenome,
+                        Senha = EncodeTo64(newUser.senha),
+                        Idade = newUser.idade,
+                        expired = DateTime.Today
+                    });
+                    await _dbContext.SaveChangesAsync();
+                }
+
+            }
+            catch(Exception e) 
+            {
+                System.Console.WriteLine(e);
+            }
         }
 
 
