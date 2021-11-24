@@ -9,6 +9,6 @@ namespace EdukaKids.Server.Data.interfaces
     public interface IUsuariosRepository {
         //Task<Login> GetUser();
         Usuarios Logar(string nome, string senha);
-        Task Cadastrar(CadastroDTO newUser);
+        void Cadastrar(CadastroDTO newUser);
     }
 }

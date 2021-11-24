@@ -13,6 +13,12 @@ using EdukaKids.Server.Data.interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Identity;
+using System.Threading.Tasks;
+using EdukaKids.Server.Controllers;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EdukaKids.Server
 {
@@ -26,11 +32,17 @@ namespace EdukaKids.Server
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                 .Build();
         }
+
+        [Obsolete]
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
             services.AddCors();
             services.AddControllers();
+
+            var policy = new AuthorizationPolicyBuilder()
+                            .RequireAuthenticatedUser()
+                            .Build();
 
             var connectionString = Configuration.GetConnectionString("EdukaKids");
             services.AddDbContext<Context>(opt =>
@@ -56,6 +68,12 @@ namespace EdukaKids.Server
             {
 
             });
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("Manager", policy => policy.RequireClaim("Store", "Manager"));
+                options.AddPolicy("Admin", policy => policy.RequireClaim("Store", "Admin"));
+            });
             
             var key = Encoding.ASCII.GetBytes(Settings.secret);
             services.AddAuthentication(x =>
@@ -77,7 +95,10 @@ namespace EdukaKids.Server
             });
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, 
+                              IWebHostEnvironment env, 
+                              IServiceProvider serviceProvider
+                            )
         {
             if (env.IsDevelopment())
             {

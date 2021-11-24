@@ -41,9 +41,9 @@ namespace EdukaKids.Server.Controllers
 
             return Ok(user.Id.ToString());
         }
-        
+
         [HttpGet("buscar")]
-        [Authorize()]
+        [Authorize("Manager")]
         public IActionResult Buscar() {
             return Ok("Autorizado");
         }

@@ -47,25 +47,26 @@ namespace EdukaKids.Server.Data.Repositories
             
         }
 
-        public async Task Cadastrar(CadastroDTO newUser)
+        public void Cadastrar(CadastroDTO newUser)
         {
             try 
             {
                 string senhaCodification = EncodeTo64(newUser.senha);
-                var senhaExistente = _dbContext.Usuarios.FirstOrDefaultAsync(x => 
-                                                x.Senha == senhaCodification).Result;
+                var senhaExistente = _dbContext.Usuarios.FirstOrDefault(x => 
+                                                x.Senha == senhaCodification);
 
                 if(senhaExistente == null) {
-                    await _dbContext.Usuarios.AddAsync(new Usuarios{
+                    _dbContext.Usuarios.Add(new Usuarios{
                         Id = Guid.NewGuid().ToString(),
                         DateLogin = DateTime.Now,
                         Nome = newUser.name,
                         Sobrenome = newUser.sobrenome,
                         Senha = EncodeTo64(newUser.senha),
                         Idade = newUser.idade,
-                        expired = DateTime.Today
+                        expired = DateTime.Today,
+                        Roles = "Common"
                     });
-                    await _dbContext.SaveChangesAsync();
+                    _dbContext.SaveChanges();
                 }
 
             }

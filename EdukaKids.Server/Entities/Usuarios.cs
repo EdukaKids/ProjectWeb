@@ -34,6 +34,9 @@ namespace EdukaKids.Server.Controllers
         [Column("IsOnline")]
         public bool IsOnline { get; set; }
 
+        [Column("Roles")]
+        public string Roles { get; set; }
+
         
     }
 }
