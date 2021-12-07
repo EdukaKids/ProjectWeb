@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace EdukaKids.Server.ViewModel{
 
     class Global{
@@ -7,4 +10,6 @@ namespace EdukaKids.Server.ViewModel{
         public string nome { get; set; }
         public string senha { get; set; }
     }
+
+    
 }

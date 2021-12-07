@@ -12,7 +12,7 @@ namespace EdukaKids.Server.Entities
     {
         [Key]
         [Column("Id")]
-        public Guid Id { get; set; }
+        public string Id { get; set; }
         [Column("Inclusao")]
         public DateTime Inclusao { get; set; }
         [Column("Pergunta")]

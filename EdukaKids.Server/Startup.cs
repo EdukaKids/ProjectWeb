@@ -19,6 +19,7 @@ using EdukaKids.Server.Controllers;
 using EdukaKids.Server.Business.Interface;
 using EdukaKids.Server.Business;
 using EdukaKids.Server.Data.Interfaces;
+using EdukaKids.Server.Entities;
 
 namespace EdukaKids.Server
 {
@@ -60,6 +61,7 @@ namespace EdukaKids.Server
             services.AddScoped<IQuizRepository, QuizRepository>();
 
             services.AddTransient<IRepository<Usuarios>, Repository<Usuarios>>();
+            services.AddTransient<IRepository<Quiz>, Repository<Quiz>>();
 
             // Adds a default in-memory implementation of IDistributedCache.
             services.AddDistributedMemoryCache();

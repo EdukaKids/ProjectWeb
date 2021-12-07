@@ -14,7 +14,7 @@ namespace EdukaKids.Server.Data.Repositories
         }
         public void NewQuiz(QuizDTO quiz, string path){
             _dbContext.Quiz.Add(new Quiz{
-                Id = Guid.NewGuid(),
+                Id = Guid.NewGuid().ToString(),
                 Inclusao = DateTime.Now,
                 Pergunta = quiz.Perguntas,
                 Resposta1 = quiz.Respostas[0],
