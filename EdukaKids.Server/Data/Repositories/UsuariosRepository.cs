@@ -1,12 +1,10 @@
 using System;
 using System.Linq;
-using System.Threading.Tasks;
 using EdukaKids.Server.Controllers;
 using EdukaKids.Server.Data.DBContext;
 using EdukaKids.Server.Data.interfaces;
 using EdukaKids.Server.Entities.DTO;
 using EdukaKids.Server.Services;
-using EdukaKids.Server.ViewModel;
 using Microsoft.EntityFrameworkCore;
 
 namespace EdukaKids.Server.Data.Repositories

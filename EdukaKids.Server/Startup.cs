@@ -13,12 +13,9 @@ using EdukaKids.Server.Data.interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.AspNetCore.Identity;
-using System.Threading.Tasks;
-using EdukaKids.Server.Controllers;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc.Authorization;
-using Microsoft.AspNetCore.Mvc;
+using EdukaKids.Server.Data.Common;
+using EdukaKids.Server.Controllers;
 
 namespace EdukaKids.Server
 {
@@ -54,6 +51,7 @@ namespace EdukaKids.Server
             });
 
             services.AddScoped<IUsuariosRepository, UsuariosRepository>();
+            services.AddTransient<IRepository<Usuarios>, Repository<Usuarios>>();
 
             // Adds a default in-memory implementation of IDistributedCache.
             services.AddDistributedMemoryCache();

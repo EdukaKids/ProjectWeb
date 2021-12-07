@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using EdukaKids.Server.Data.Common;
 using EdukaKids.Server.Data.interfaces;
 using EdukaKids.Server.Entities.DTO;
 using EdukaKids.Server.Services;
@@ -16,10 +17,22 @@ namespace EdukaKids.Server.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUsuariosRepository _UsuariosRepository;
+        private readonly IRepository<Usuarios> _repository;
 
-        public UserController(IUsuariosRepository usuariosRepository) {
+        public UserController(IUsuariosRepository usuariosRepository,
+                              IRepository<Usuarios> repository
+                             )
+        {
             _UsuariosRepository = usuariosRepository;
+            _repository = repository;
         }
+
+        [HttpGet("{id}")]
+        public IActionResult get(Guid id) {
+            dynamic user = _repository.GetUserById(id);
+
+            return Ok(user.Roles);
+        }        
 
         [HttpPost("Cadastrar")]
         public ActionResult<dynamic> Cadastrar([FromBody] CadastroDTO newUser) {
