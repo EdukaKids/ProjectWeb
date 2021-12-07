@@ -1,3 +1,13 @@
+var requestOptions = {
+	method: 'GET',
+	redirect: 'follow'
+  };
+  
+  fetch(location.origin + '/api/Quiz', requestOptions)
+	.then(response => response.text())
+	.then(result => console.log(result))
+	.catch(error => console.log('error', error));
+
 // Array of Objects
 const quiz = [
 	{

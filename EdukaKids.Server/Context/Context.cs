@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using EdukaKids.Server.Controllers;
+using EdukaKids.Server.Entities;
 
 namespace EdukaKids.Server.Data.DBContext
 {
@@ -9,5 +10,6 @@ namespace EdukaKids.Server.Data.DBContext
 
         // Entities
         public DbSet<Usuarios> Usuarios { get; set; }
+        public DbSet<Quiz> Quiz { get; set; }
     }
 }

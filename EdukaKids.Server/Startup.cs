@@ -16,6 +16,9 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authorization;
 using EdukaKids.Server.Data.Common;
 using EdukaKids.Server.Controllers;
+using EdukaKids.Server.Business.Interface;
+using EdukaKids.Server.Business;
+using EdukaKids.Server.Data.Interfaces;
 
 namespace EdukaKids.Server
 {
@@ -50,7 +53,12 @@ namespace EdukaKids.Server
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TodoApi", Version = "v1" });
             });
 
+            // Camada de Negocio sendo injetado
+            services.AddScoped<IQuizBusiness, QuizBusiness>();
+
             services.AddScoped<IUsuariosRepository, UsuariosRepository>();
+            services.AddScoped<IQuizRepository, QuizRepository>();
+
             services.AddTransient<IRepository<Usuarios>, Repository<Usuarios>>();
 
             // Adds a default in-memory implementation of IDistributedCache.

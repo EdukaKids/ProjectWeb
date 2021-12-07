@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace EdukaKids.Server.Entities.DTO
 {
-    public class Quiz
+    public class QuizDTO
     {
         public string Perguntas { get; set; }
         public List<string> Respostas { get; set; }
