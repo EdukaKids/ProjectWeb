@@ -1,7 +1,7 @@
 
 $(document).ready(function (){
     // carrega pagina login se não estiver logado
-    if(window.localStorage.length === 0)
+    if(window.localStorage.length === 0 && window.location.href != window.location.origin + "/cadastro.php")
         window.location.href = window.location.origin + "/login.php"
 
     console.log(localStorage.getItem("login"))

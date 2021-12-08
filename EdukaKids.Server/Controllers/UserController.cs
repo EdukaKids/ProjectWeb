@@ -43,7 +43,7 @@ namespace EdukaKids.Server.Controllers
         [HttpPost("BuscaLoginValido")]
         public IActionResult Login([FromBody] User model)
         {
-            var user = _UsuariosRepository.Logar(model.nome, model.senha);
+            var user = _UsuariosRepository.Logar(model.email, model.senha);
 
             if(user == null) {
                 return NotFound("Login ou Senha invalida");

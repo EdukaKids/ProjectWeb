@@ -4,6 +4,7 @@ namespace EdukaKids.Server.Entities.DTO
     {
         public string name      { get; set; }
         public string sobrenome { get; set; }
+        public string email      { get; set; }
         public string senha     { get; set; }
         public int    idade     { get; set; }
     }

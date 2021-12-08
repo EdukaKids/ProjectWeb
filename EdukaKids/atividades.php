@@ -58,7 +58,7 @@ text-decoration: none;
 <body>
    <header>
       <div class="contenedor"><!--alinhamento do site -->
-          <a href="index.php"><img src="images/icon.png" width="70" height="70" alt="Logo SC Food" title="Logo SC Food"></a>
+          <a href="index.php"><img src="images/icon.png" width="70" height="70" alt="Logo Educa Kids" title="Logo Educa Kids" class="imgtopo"></a>
           <h1 style="margin-top: 3px;">Eduka Kids</h1>
           <input type="checkbox" id="menu-bar">
           <label class="icon-menu" for="menu-bar"></label>     
@@ -74,17 +74,17 @@ text-decoration: none;
    <main>
     <div class="banner">
         <div class="contenedor">
-            <h1 class="titulo">Atividades</h1> </div>
+            <h1 class="titulo">ATIVIDADES</h1> </div>
     </div>
         <div class="contenedor">
-            <center><h1>APRENDA BRINCANDO!!</h1></center>
+            <center><h1></h1></center>
             <br> 
             <br>
        </div>
 </main> 
 <div class="contenedor2">
 		<div class="contenedor_tarjeta">
-			<a href="quiz/quiz.php">
+			<a href="quiz_interna.php">
 				<figure id="tarjeta">
 					<img src="images/quiz.png" class="frontal" alt="quiz" title="Eduka Kids">
 					<figcaption class="trasera">
@@ -111,7 +111,7 @@ text-decoration: none;
     </div>
         <div class="contenedor4">
     <div class="contenedor_tarjeta">
-      <a href="">
+      <a href="videos.php">
         <figure id="tarjeta">
           <img src="images/videos.png" class="frontal" alt="videos" title="Eduka Kids">
           <figcaption class="trasera">

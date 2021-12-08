@@ -70,7 +70,8 @@ text-decoration: none;
 <body>
    <header>
       <div class="contenedor"><!--alinhamento do site -->
-          <a href="index.php"><img src="images/icon.png" width="70" height="70" alt="Logo SC Food" title="Logo SC Food"></a>
+          <a href="index.php"><img src="images/icon.png" width="70" height="70" alt="Logo Educa Kids" title="Logo Educa Kids" class="imgtopo"></a>
+
           <h1 style="margin-top: 3px;">Eduka Kids</h1>
           <input type="checkbox" id="menu-bar">
           <label class="icon-menu" for="menu-bar"></label>     
@@ -92,8 +93,22 @@ text-decoration: none;
    <br>
    <section>
       <div class="contenedor">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/lKrZ_aVGwUU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h1>Termos e Condições</h1><br><br>
+        <br>
+     <p style="text-align: justify;">Todas as suas informações pessoais recolhidas, serão usadas para o ajudar a tornar a sua visita em nossa plataforma a mais produtiva e agradável possível.
+     A garantia da confidencialidade dos dados pessoais dos utilizadores de nossa plataforma é importante para a Eduka Kids.
+     Todas as informações pessoais relativas a membros, assinantes, ou visitantes que usem a Eduka Kids serão tratadas em concordância com a Lei da Proteção de Dados Pessoais de 26 de outubro de 1998 (Lei nº 67/98).
+     A informação pessoais recolhida pode incluir o seu nome, sobrenome, idade e e-mail.
+     O uso da plataforma pressupõe a aceitação deste Acordo de privacidade. A equipa do Eduka Kids reserva-se ao direito de alterar este acordo sem aviso prévio. Deste modo, recomendamos que consulte a nossa política de privacidade com regularidade de forma a estar sempre atualizado.
       </div>
+      
+      <br>
+      <br>
+      <br>
+      <br>
+    </p>
+  </div>
+</section>
 
     <footer class="rodape">
 		<div class="container"><center>

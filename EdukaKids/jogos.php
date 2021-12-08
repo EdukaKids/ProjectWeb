@@ -58,8 +58,7 @@ text-decoration: none;
 <body>
    <header>
       <div class="contenedor"><!--alinhamento do site -->
-          <a href="index.php"><img src="images/icon.png" width="70" height="70" alt="Logo SC Food" title="Logo SC Food"></a>
-          <h1 style="margin-top: 3px;">Eduka Kids</h1>
+          <a href="index.php"><img src="images/icon.png" width="70" height="70" alt="Logo Educa Kids" title="Logo Educa Kids" class="imgtopo"></a>          <h1 style="margin-top: 3px;">Eduka Kids</h1>
           <input type="checkbox" id="menu-bar">
           <label class="icon-menu" for="menu-bar"></label>     
           <nav class="menu"><!--menu -->
@@ -74,17 +73,16 @@ text-decoration: none;
    <main>
     <div class="banner">
         <div class="contenedor">
-            <h1 class="titulo">Jogos</h1> </div>
+            <h1 class="titulo">JOGOS</h1> </div>
     </div>
         <div class="contenedor">
-            <center><h1>APRENDA BRINCANDO!!</h1></center>
             <br> 
             <br>
        </div>
 </main> 
 <div class="contenedor2">
 		<div class="contenedor_tarjeta">
-			<a href="https://simmer.io/@EdukaKids/jogo-da-memoria">
+			<a href="">
 				<figure id="tarjeta">
 					<img src="images/jogo_memoria.png" class="frontal" alt="jogo_memoria" title="Eduka Kids">
 					<figcaption class="trasera">
@@ -97,7 +95,7 @@ text-decoration: none;
 		</div>
     <div class="contenedor3">
     <div class="contenedor_tarjeta">
-      <a href="">
+      <a href="https://simmer.io/@EdukaKids/jogo-da-memoria">
         <figure id="tarjeta">
           <img src="images/jogo_velha.png" class="frontal" alt="jogo_velha" title="Eduka Kids">
           <figcaption class="trasera">

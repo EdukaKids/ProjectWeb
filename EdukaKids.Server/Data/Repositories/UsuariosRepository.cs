@@ -21,9 +21,9 @@ namespace EdukaKids.Server.Data.Repositories
             return
         }*/
 
-        public Usuarios Logar(string nome, string senha) {
+        public Usuarios Logar(string email, string senha) {
 
-            var consulta = _dbContext.Usuarios.SingleOrDefault(l => l.Nome == nome && l.Senha == EncodeTo64(senha));
+            var consulta = _dbContext.Usuarios.SingleOrDefault(l => l.email == email && l.Senha == EncodeTo64(senha));
 
             var token = TokenService.GenerateToken(consulta);
 
@@ -62,7 +62,8 @@ namespace EdukaKids.Server.Data.Repositories
                         Senha = EncodeTo64(newUser.senha),
                         Idade = newUser.idade,
                         expired = DateTime.Today,
-                        Roles = "Common"
+                        Roles = "Common",
+                        email = newUser.email
                     });
                     _dbContext.SaveChanges();
                 }

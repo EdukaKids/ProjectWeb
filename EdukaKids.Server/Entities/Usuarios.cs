@@ -37,6 +37,8 @@ namespace EdukaKids.Server.Controllers
         [Column("Roles")]
         public string Roles { get; set; }
 
+        [Column("email")]
+        public string email { get; set; }
         
     }
 }

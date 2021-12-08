@@ -193,7 +193,7 @@ function startQuiz(){
 
 }
 
-window.onload = function (){
-	console.log(quiz.length)
-	homeBox.querySelector(".total-question").innerHTML = quiz.length;	
+window.onload = async function (){
+
+	homeBox.querySelector(".total-question").innerHTML = quiz.length;
 }

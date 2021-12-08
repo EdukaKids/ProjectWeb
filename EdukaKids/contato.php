@@ -88,7 +88,7 @@ text-decoration: none;
 <body>
    <header>
       <div class="contenedor">
-           <a href="index.php"><img src="images/icon.png" width="70" height="70" alt="Logo SC Food" title="Logo SC Food"></a>
+           <a href="index.php"><img src="images/icon.png" width="70" height="70" alt="Logo Educa Kids" title="Logo Educa Kids" class="imgtopo"></a>
           <h1 style="margin-top: 3px;">Eduka Kids</h1>
           <input type="checkbox" id="menu-bar">
           <label class="icon-menu" for="menu-bar"></label>     

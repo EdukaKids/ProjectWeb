@@ -38,7 +38,7 @@ namespace EdukaKids.Server.Controllers
                     img = value.PathImg
                 });
             }
-            return Ok("foi");
+            return Ok(array);
         }
 
         [HttpPost]

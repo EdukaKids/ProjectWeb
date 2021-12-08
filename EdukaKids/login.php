@@ -1,131 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" href="css/fontello.css"> <!-- folha de estilo dos icones facebook, etc -->
-        <link rel="stylesheet" href="css/style.css"> <!--folha de estilo do layout -->
-        <link rel="stylesheet" href="css/menu.css"> <!--folha de estilo do menu -->
-        <link rel="stylesheet" href="css/subir.css"><!--estilo do botao de subir ao topo -->
-        <!--fim -->
-        <link rel="shortcut icon" href="images/guia.jpg" type="image/jpg" /> <!--imagem do guia do navegador -->
-        <!-- slide -->
-        <link rel="stylesheet" href="css/flexslider.css">
-        <link rel="stylesheet" href="css/font-awesome.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script>
-            $(document).ready(function (){
-                if(localStorage.length != 0)
-                    window.location.href = location.origin
-                
-            })
-        </script>
-    </head>
-    <body>
-    <!-- Banner Padrão do login -->
-    <div class="bg-image-banner mb-5 pb-5">
-        <div class="container" style="padding-top: 5%;">
-            <div class="row">
-                <h1><b>Bootstrap Tutorial</b></h1> </br>
-            </div>
-            <div class="row description">
-                <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
-                responsive, mobile-first projects on the web.</p>
-            </div>
-        </div>
-    </div>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+<link rel="stylesheet" href="css/fontello.css"> <!-- folha de estilo dos icones facebook, etc -->
+<link rel="stylesheet" href="css/style.css"> <!--folha de estilo do layout -->
+<link rel="stylesheet" href="css/menu.css"> <!--folha de estilo do menu -->
+<!-- Script de subir ao topo -->
+<script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.min.js"></script><!--codigo jquery para o botao de subir ao topo -->
+<link rel="stylesheet" href="css/subir.css"><!--estilo do botao de subir ao topo -->
+<!--fim -->
+<link rel="shortcut icon" href="images/guia.jpg" type="image/jpg" /> <!--imagem do guia do navegador -->
+<!-- slide -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/contato.css">
 
-    <!-- Formulario de login -->
-    <div class="row d-flex justify-content-center">
-        <div class="mb-3 col-5">
-           
-            <label for="nome" class="form-label">Email address</label>
-            <input type="name" class="form-control" id="nome" aria-describedby="emailHelp">
-            
-        </div>
-    </div>
-
-    <div class="row d-flex justify-content-center">
-        <div class="mb-3 col-5">
-            <label for="senha" class="form-label">Password</label>
-            <input type="password" class="form-control" id="senha">
-        </div>
-    </div>
-    <div class="d-flex justify-content-center">
-        <button name="enviar" id="logar" class="btn btn-primary">Submit</button>
-    </div>
-
-    </br>
-
-    <!-- Rodapé -->
-    <footer class="rodape mt-5 pt-5">
-		<div class="container"><center>
-			<div class="rede" id="facebook"> <a href="" class="icon-facebook-squared sociais"></a> </div>
-        	<div class="rede" id="instagram"> <a href="" class="icon-instagram sociais"></a> </div><br><br>
-			<a href="info.php" class="cond">Termos e Condições</a>|
-			<a href="mapa.php" class="cond">Mapa do Site </a><br><br>
-			<span>© Copyright 2021, Eduka Kids - Todos os direitos reservados.</span>
-		</center>
-		</div>
-	</footer>
-    <!--Botão voltar para cima-->
-    <div class="btn-voltar jbtn-voltar">
-        <a class="btn-voltar-link jbtn-voltar-link" href="" title="">
-            TOPO
-        </a>
-    </div>
-    <!-- fim botão-->
-            
-    </body>
-</html>
-
-<script>
-    $("#logar").on("click", function() {
-        var data = JSON.stringify({
-            "nome": $('#nome').val(),
-            "senha": $('#senha').val()
-        });
-        var config = {
-            method: 'post',
-            url: 'https://localhost:5001/api/User/BuscaLoginValido',
-            headers: { 
-                'Content-Type': 'application/json'
-            },
-            data: data
-        };
-        axios(config)
-            .then(res => {
-                if(res != null){
-                    window.localStorage.setItem('login', res.data)
-                    window.location.href = location.origin
-                }
-            }).catch(err => {
-                console.log('Error: ' + err)
-            })
-    });
-</script>
-
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<title>Eduka Kids</title>
 <style>
-    *{
-        padding: 0;
-        margin: 0;
-    }
-    .bg-image-banner {
-        width: 100%;
-        height: 70vh;
-        background-image: url('./images/banner.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .description {
-        width: 50%;
-    }
-    /*redes sociais */
+/*redes sociais */
 .rede{
     width: 32pxpx;
     height: 32px;
@@ -152,3 +49,84 @@ font-size: 23px;
 text-decoration: none;
 }
 </style>
+<script>
+            $(document).ready(function (){
+                if(localStorage.length != 0)
+                    window.location.href = location.origin
+                
+            })
+        </script>
+</head>
+<body>
+   <header>
+      <div class="contenedor"><!--alinhamento do site -->
+          <a href="index.php"><img src="images/icon.png" width="70" height="70" alt="Logo Educa Kids" title="Logo Educa Kids" class="imgtopo"></a>
+          <h1 style="margin-top: 3px;">Eduka Kids</h1>
+          <input type="checkbox" id="menu-bar">
+          <label class="icon-menu" for="menu-bar"></label>     
+      </div>
+   </header>
+   
+   <main>
+      <section>
+        <img src="images/banner.png" class="banner" alt="Banner" title="Banner"><!--banner do site -->
+      </section>
+   </main> 
+
+<section>
+    <div class="container">
+      <div class="formulario"><br>
+      <input type="email" name="email" id="email" class="formulario_input">
+      <label for="" class="formulario_label">Email</label>
+      <input type="password" name="password" id="senha" class="formulario_input">
+      <label for="password" class="formulario_label">Senha</label>
+      <button id="logar" class="formulario_submit">Entrar</button>
+        </div><br>
+    <script src="js/form.js"></script>
+    </div>
+  </section>
+    <footer class="rodape">
+    <div class="container"><center>
+    <div class="rede" id="facebook"> <a href="" class="icon-facebook-squared sociais"></a> </div>
+        <div class="rede" id="instagram"> <a href="" class="icon-instagram sociais"></a> </div><br><br>
+    <a href="info.php" class="cond">Termos e Condições</a>|
+    <a href="mapa.php" class="cond">Mapa do Site </a><br><br>
+    <span>© Copyright 2021, Eduka Kids - Todos os direitos reservados.</span>
+    </center>
+    </div>
+    </footer>
+        <!--Botão voltar para cima-->
+        <div class="btn-voltar jbtn-voltar">
+            <a class="btn-voltar-link jbtn-voltar-link" href="" title="">
+                TOPO
+            </a>
+        </div>
+        <!-- fim botão-->
+</body>
+</html>
+
+<script>
+    $("#logar").on("click", function() {
+        var data = JSON.stringify({
+            "email": $('#email').val(),
+            "senha": $('#senha').val()
+        });
+        var config = {
+            method: 'post',
+            url: 'https://localhost:5001/api/User/BuscaLoginValido',
+            headers: { 
+                'Content-Type': 'application/json'
+            },
+            data: data
+        };
+        axios(config)
+            .then(res => {
+                if(res != null){
+                    window.localStorage.setItem('login', res.data)
+                    window.location.href = location.origin
+                }
+            }).catch(err => {
+                console.log('Error: ' + err)
+            })
+    });
+</script>
